@@ -10,7 +10,7 @@ end
 
 
 my_collect(['ruby', 'javascript', 'python', 'objective-c']) do |lang|
-  lang.upcase
+  return lang.upcase
 end
 
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
