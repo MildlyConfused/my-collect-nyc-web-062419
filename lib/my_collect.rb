@@ -1,13 +1,12 @@
 def my_collect(array)
-  i = 0 
-  newA = array
-  while i < newA.length
-    yield newA[i]
+  i = 0
+  collection = []
+  while i < array.length
+    collection << yield(array[i])
     i += 1
   end
-  return newA
+  collection
 end
-
 
 
 my_collect(['ruby', 'javascript', 'python', 'objective-c']) do |lang|
