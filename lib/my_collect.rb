@@ -5,7 +5,7 @@ end
 
 
 
-my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) do |name|
+my_collect(['ruby', 'javascript', 'python', 'objective-c']) do |name|
   name.split(" ").first 
 end
 
